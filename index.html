@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="dog-years.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Years Calculator</title>
+</head>
+<body>
+    <div class="title-box">
+    <h2>How old are you in dog years?</h2>
+</div>
+<div class="form-box">
+    <!-- User info form -->
+    <form action="/submit" method="post">
+
+        <!-- input fields -->
+        <label for="humanName"></label>
+        <input type="text" id="humanName" name="humanName" placeholder="Human Name"><br>
+        <label for="humanAge"></label>
+        <input type="text" id="humanAge" name="humanAge" placeholder="Human Age" pattern="[1-9][0-9]*" title="Age requires digits without leading zeros." required>
+
+        <!-- Submit button -->
+        <button type="button" onclick="userData()">Calculate</button>
+    </form>
+</div>
+    <div class="outputArea" id="outputArea"></div>
+</body>
+</html>
