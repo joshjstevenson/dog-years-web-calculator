@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="dog-years.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Years</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <div class="logo"><img src="images/dog years dog.png" alt="Dog logo image."" width="100" height="100"></div>
+    <div class="heading-text">
+    <h2>Find out how old you are in dog years.<br>Enter your age below.</h2>
+</div>
+<div class="decorative-line"></div>
+    <!-- User info form -->
+    <form id="form" action="/submit" method="post">
+
+        <!-- input fields -->
+        <label for="humanName"><i class="fa-solid fa-user"></i></label>
+        <input type="text" class=custom-input id="humanName" name="humanName" placeholder="NAME" aria-placeholder="Enter Human name." title="Your Human name here."><br><br>
+        <label for="humanAge"></label>
+        <input type="text" class=custom-input id="humanAge" name="humanAge" placeholder="HUMAN AGE" aria-placeholder="Enter Human age." pattern="[1-9][0-9]*" title="Your Human age here." required>
+
+        <!-- Submit button -->
+        <button type="button" onclick="userData()" aria-label="Calculate dog years button.">Calculate</button>
+    </form>
+
+    <div class="outputArea" id="outputArea"></div>
+</body>
+</html>
